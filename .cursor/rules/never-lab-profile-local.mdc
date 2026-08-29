@@ -1,0 +1,9 @@
+---
+description: Never-lab profile local agent entrypoint
+alwaysApply: true
+---
+
+# Never-lab profile local
+
+1. Read `AGENTS.md` → `CLAUDE.md`.
+2. Skill **`no-ai-slop`**. Never `Co-authored-by: Cursor`.
