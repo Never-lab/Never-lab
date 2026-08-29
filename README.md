@@ -1,6 +1,6 @@
 # Nicholas Antinori
 
-**Technical Operation** at [Afea | healthcare e-volution](https://www.afea.it) · Terni, Umbria, Italia
+**Technical Operation** at [Afea | healthcare e-volution](https://afeasanita.it/) · Terni, Umbria, Italia
 
 Sistemi, monitoraggio e supporto tecnico in ambito healthcare. Contributi open source (es. [Glowroot](https://github.com/glowroot/glowroot)) e stack Java / dati.
 
