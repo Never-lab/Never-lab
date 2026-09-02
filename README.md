@@ -21,6 +21,9 @@ Manifest skill e setup agent in questo repo:
 - [`scripts/install-skills.sh`](scripts/install-skills.sh) — install globale
 - [`cursor/templates/`](cursor/templates/) — MCP, hooks, CLI config
 
+### Hobby
+Progetti personali (console, side quest): [`hobby/`](hobby/)
+
 ---
 
 <sub>ITT "Allievi-Sangallo" · competenze: Java, SQL, PHP, C++, Bootstrap, Git</sub>
