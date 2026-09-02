@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "claude-mem": {
+      "command": "node",
+      "args": [
+        "/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/mcp-server.cjs"
+      ]
+    },
+    "agenticstore": {
+      "command": "uvx",
+      "args": [
+        "agentic-store-mcp",
+        "--tools",
+        "token_optimizer"
+      ]
+    },
+    "excel": {
+      "command": "uvx",
+      "args": [
+        "excel-mcp-server",
+        "stdio"
+      ]
+    }
+  }
+}

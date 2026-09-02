@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor session-init"
+      },
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor context"
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor observation"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor observation"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor file-edit"
+      }
+    ],
+    "stop": [
+      {
+        "command": "\"/home/nicholas/.bun/bin/bun\" \"/home/nicholas/Scrivania/Lavoro/.cursor/vendor/claude-mem/scripts/worker-service.cjs\" hook cursor summarize"
+      }
+    ]
+  }
+}

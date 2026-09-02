@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "updated": "2026-09-02",
+  "install": "scripts/install-skills.sh",
+  "starter_pack": [
+    {
+      "repo": "anthropics/skills",
+      "skills": ["xlsx", "docx", "mcp-builder"]
+    },
+    {
+      "repo": "TerminalSkills/skills",
+      "skills": ["sql-optimizer", "log-analyzer", "keycloak"]
+    },
+    {
+      "repo": "Kulaxyz/self-learning-skills",
+      "skills": ["self-learning"]
+    },
+    {
+      "repo": "fallow-rs/fallow-skills",
+      "skills": ["fallow", "fallow-review"]
+    },
+    {
+      "repo": "AgriciDaniel/claude-cybersecurity",
+      "skills": ["cybersecurity"]
+    },
+    {
+      "repo": "giuseppe-trisciuoglio/developer-kit",
+      "path": "plugins/developer-kit-java/skills",
+      "skills": ["spring-boot-test-patterns", "spring-boot-actuator"]
+    },
+    {
+      "repo": "giuseppe-trisciuoglio/developer-kit",
+      "path": "plugins/developer-kit-typescript/skills",
+      "skills": ["react-code-review", "typescript-security-review"]
+    },
+    {
+      "repo": "Never-lab/glowroot",
+      "path": "skills/glowroot-ops",
+      "skills": ["glowroot-ops"],
+      "local": "/data/progetti/Glowroot/skills/glowroot-ops"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "skills": [
+        "babysit", "design-is", "do", "how-it-works", "knowledge-agent",
+        "learn-codebase", "make-plan", "mem-search", "oh-my-issues",
+        "pathfinder", "smart-explore", "standup", "timeline-report",
+        "version-bump", "weekly-digests", "wowerpoint", "graphify"
+      ]
+    },
+    {
+      "name": "superpowers",
+      "repo": "obra/superpowers",
+      "type": "cursor-plugin"
+    },
+    {
+      "name": "ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "skills": [
+        "ponytail", "ponytail-audit", "ponytail-debt", "ponytail-gain",
+        "ponytail-help", "ponytail-review"
+      ]
+    },
+    {
+      "name": "karpathy-guidelines",
+      "repo": "andrej-karpathy/skills",
+      "skills": ["karpathy-guidelines"]
+    },
+    {
+      "name": "finance-dashboard",
+      "skills": [
+        "finance-dashboard-setup", "finance-new-month-dashboard",
+        "finance-customization-dashboard"
+      ]
+    }
+  ],
+  "local_only": [
+    {
+      "name": "analisi-engine",
+      "path": "skills/local/analisi-engine",
+      "note": "Dispatcher JVM/SQL — paths Lavoro/Analisi"
+    }
+  ],
+  "tools": [
+    {
+      "name": "sync-skill",
+      "repo": "william-garden/sync-skill",
+      "install": "npm install -g sync-skill",
+      "usage": "npx sync-skill claude cursor"
+    },
+    {
+      "name": "skillhawk",
+      "repo": "Berserk-hub150/skillhawk",
+      "note": "Security scanner for SKILL.md before install"
+    }
+  ]
+}

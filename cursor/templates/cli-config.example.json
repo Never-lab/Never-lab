@@ -1,0 +1,103 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(ls)",
+      "Shell(cat)",
+      "Shell(apt-cache)",
+      "Shell(head)",
+      "Shell(systemctl is-enabled)",
+      "Shell(systemctl is-active)",
+      "Shell(find)",
+      "Shell(grep)",
+      "Shell(dpkg)",
+      "Shell(python3)",
+      "Shell(pgrep)",
+      "WebFetch(raw.githubusercontent.com)",
+      "Write(/etc/apt/sources.list.d/helium.sources)",
+      "Shell(mount)",
+      "Shell(xargs)",
+      "Shell(true)",
+      "Shell(cd)",
+      "Shell(git remote)",
+      "Shell(git status)",
+      "Shell(git branch)",
+      "Shell(diff)",
+      "Shell(wc)",
+      "Shell(cp)",
+      "Shell(git fetch)",
+      "Shell(git log)",
+      "Shell(echo)",
+      "Shell(git show)",
+      "Shell(sed)",
+      "Shell(git diff)",
+      "Shell(git pull)",
+      "Shell(git add)",
+      "Shell(git rebase)",
+      "Shell(git push)",
+      "Shell(sort)",
+      "Shell(jar)",
+      "Shell(rg)",
+      "Shell(unzip)",
+      "Shell(mvn)",
+      "Mcp(claude-mem:search)",
+      "WebFetch(github.com)"
+    ],
+    "deny": []
+  },
+  "version": 1,
+  "editor": {
+    "vimMode": false
+  },
+  "display": {
+    "showLineNumbers": false,
+    "showThinkingBlocks": true,
+    "showStatusIndicators": true,
+    "showStatusLineRunningTime": true,
+    "mode": "zen"
+  },
+  "notifications": true,
+  "hints": true,
+  "modelSlashCommands": true,
+  "rewind": false,
+  "model": {
+    "modelId": "default",
+    "displayModelId": "auto",
+    "displayName": "Auto",
+    "displayNameShort": "Auto",
+    "aliases": [
+      "auto"
+    ],
+    "maxMode": false
+  },
+  "hasChangedDefaultModel": true,
+  "maxMode": false,
+  "modelParameters": {
+    "composer-2.5": [
+      {
+        "id": "fast",
+        "value": "true"
+      }
+    ],
+    "default": []
+  },
+  "selectedModel": {
+    "modelId": "default",
+    "parameters": []
+  },
+  "exploreSubagentModel": "default",
+  "network": {
+    "useHttp1ForAgent": false
+  },
+  "approvalMode": "unrestricted",
+  "autoAcceptWebSearch": false,
+  "sandbox": {
+    "mode": "disabled",
+    "networkAccess": "user_config_with_defaults"
+  },
+  "showSandboxIntro": false,
+  "runEverythingSettingsPromptStreak": 0,
+  "attribution": {
+    "attributeCommitsToAgent": true,
+    "attributePRsToAgent": true
+  }
+}
