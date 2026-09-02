@@ -20,5 +20,11 @@ Poi in Cursor: plugin **claude-mem**, **superpowers**, **ponytail** dal marketpl
 |------|------|
 | `skills/manifest.json` | Catalogo skill con repo sorgente |
 | `scripts/install-skills.sh` | Install globale in `~/.cursor/skills` |
-| `skills/local/` | Skill custom (`analisi-engine`, `glowroot-ops`) |
+| `skills/local/` | Custom: `analisi-engine`, `glowroot-contrib`, mirror `glowroot-ops` |
 | `cursor/templates/` | Esempi `mcp.json`, `hooks.json`, `cli-config` |
+
+## Glowroot (contrib)
+
+Fork locale: `~/Documents/Glowroot` → `doc/AGENT.md` + rule `.cursor/rules/glowroot-local.mdc`.
+
+Per coda PR / force-push maintainer: skill **`glowroot-contrib`**. Non usare snapshot PR vecchi nei session report.

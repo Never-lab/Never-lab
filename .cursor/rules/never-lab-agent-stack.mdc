@@ -7,10 +7,10 @@ alwaysApply: true
 
 1. Leggi `AGENTS.md` → `CLAUDE.md`.
 2. Skill **`no-ai-slop`** su testi pubblici. Mai `Co-authored-by: Cursor`.
-3. Skill stack: vedi `skills/manifest.json` e `scripts/install-skills.sh`.
+3. Skill stack: `skills/manifest.json` + `scripts/install-skills.sh`.
 4. Memoria: MCP **claude-mem** (hooks in `cursor/templates/hooks.json.example`).
-5. Workflow: **superpowers** (plugin) + **ponytail** (semplicità) + **karpathy-guidelines**.
-6. JVM/APM: **glowroot-ops**, **analisi-engine**, **sql-optimizer**, **log-analyzer**.
+5. Workflow: **superpowers** + **ponytail** + **karpathy-guidelines** + **babysit** (PR).
+6. Glowroot: **glowroot-contrib** (PR/maintainer), **glowroot-ops** (ops/wiki esplicito), **analisi-engine**, **sql-optimizer**, **log-analyzer**.
 7. Java/Spring: **spring-boot-test-patterns**, **spring-boot-actuator**.
 8. TS/React: **react-code-review**, **typescript-security-review**, **fallow**.
 9. Sicurezza: **cybersecurity** (review esplicita, non auto-deploy).

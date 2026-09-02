@@ -31,20 +31,33 @@ done
 rm -rf "$TMP"
 
 echo "==> glowroot-ops (from Glowroot repo if present)"
-GLOWROOT_OPS="${GLOWROOT_OPS:-$HOME/Scrivania/Lavoro/glowroot/skills/glowroot-ops}"
-if [[ -d "$GLOWROOT_OPS" ]]; then
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+GLOWROOT_OPS_CANDIDATES=(
+  "${GLOWROOT_OPS:-}"
+  "$HOME/Documents/Glowroot/skills/glowroot-ops"
+  "$HOME/Scrivania/Lavoro/glowroot/skills/glowroot-ops"
+  "/data/progetti/Glowroot/skills/glowroot-ops"
+  "$SCRIPT_DIR/../skills/local/glowroot-ops"
+)
+GLOWROOT_OPS=""
+for c in "${GLOWROOT_OPS_CANDIDATES[@]}"; do
+  [[ -n "$c" && -d "$c" ]] && GLOWROOT_OPS="$c" && break
+done
+if [[ -n "$GLOWROOT_OPS" ]]; then
   cp -a "$GLOWROOT_OPS" "$CURSOR_SKILLS/glowroot-ops"
   cp -a "$GLOWROOT_OPS" "$AGENTS_SKILLS/glowroot-ops"
+  echo "  from $GLOWROOT_OPS"
 else
-  echo "  skip: $GLOWROOT_OPS not found"
+  echo "  skip: glowroot-ops not found"
 fi
 
-echo "==> Local analisi-engine"
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-if [[ -d "$SCRIPT_DIR/../skills/local/analisi-engine" ]]; then
-  cp -a "$SCRIPT_DIR/../skills/local/analisi-engine" "$CURSOR_SKILLS/"
-  cp -a "$SCRIPT_DIR/../skills/local/analisi-engine" "$AGENTS_SKILLS/"
-fi
+echo "==> Local analisi-engine + glowroot-contrib"
+for skill in analisi-engine glowroot-contrib; do
+  if [[ -d "$SCRIPT_DIR/../skills/local/$skill" ]]; then
+    cp -a "$SCRIPT_DIR/../skills/local/$skill" "$CURSOR_SKILLS/"
+    cp -a "$SCRIPT_DIR/../skills/local/$skill" "$AGENTS_SKILLS/"
+  fi
+done
 
 echo "==> Plugin skills: install claude-mem, ponytail, superpowers via Cursor plugin marketplace"
 echo "==> sync-skill CLI (optional): npm install -g sync-skill"

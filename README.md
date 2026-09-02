@@ -19,7 +19,9 @@ Manifest skill e setup agent in questo repo:
 
 - [`skills/manifest.json`](skills/manifest.json) — catalogo
 - [`scripts/install-skills.sh`](scripts/install-skills.sh) — install globale
+- [`skills/local/glowroot-contrib/`](skills/local/glowroot-contrib/) — coda PR Glowroot + force-push maintainer
 - [`cursor/templates/`](cursor/templates/) — MCP, hooks, CLI config
+- [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md) — note agent
 
 ### Hobby
 Progetti personali (console, side quest): [`hobby/`](hobby/)

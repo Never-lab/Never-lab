@@ -2,6 +2,7 @@
   "version": 1,
   "updated": "2026-09-02",
   "install": "scripts/install-skills.sh",
+  "notes": "Glowroot PR/maintainer: skills/local/glowroot-contrib. Ops/wiki: glowroot-ops (explicit). Live gh status only — no stale PR tables.",
   "starter_pack": [
     {
       "repo": "anthropics/skills",
@@ -37,7 +38,11 @@
       "repo": "Never-lab/glowroot",
       "path": "skills/glowroot-ops",
       "skills": ["glowroot-ops"],
-      "local": "/data/progetti/Glowroot/skills/glowroot-ops"
+      "local_candidates": [
+        "~/Documents/Glowroot/skills/glowroot-ops",
+        "~/Scrivania/Lavoro/glowroot/skills/glowroot-ops",
+        "/data/progetti/Glowroot/skills/glowroot-ops"
+      ]
     }
   ],
   "plugins": [
@@ -82,6 +87,11 @@
       "name": "analisi-engine",
       "path": "skills/local/analisi-engine",
       "note": "Dispatcher JVM/SQL — paths Lavoro/Analisi"
+    },
+    {
+      "name": "glowroot-contrib",
+      "path": "skills/local/glowroot-contrib",
+      "note": "PR queue + nowheresly force-push/rebase interpretation"
     }
   ],
   "tools": [
